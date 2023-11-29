@@ -1,5 +1,6 @@
 ---
 title: Rewriting My Personal Website in 2023
+author: metheis
 date: 2023-11-27 23:35:00 -0800
 categories: [General, Infrastructure]
 tags: [main site]
