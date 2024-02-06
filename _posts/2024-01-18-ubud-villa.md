@@ -3,7 +3,7 @@ title: Ubud Villa Shots
 author: metheis
 date: 2024-01-18 02:05:00 -0800
 categories: [Travel, Indonesia]
-tags: [ubud, villa, indonesia]
+tags: [indonesia, villa, travel]
 pin: false
 image:
   path: /assets/img/2024-01-18-ubud-villa/DSC_2467.JPG
