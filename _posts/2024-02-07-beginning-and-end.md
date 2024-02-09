@@ -7,9 +7,10 @@ tags: [quotes, poems]
 pin: false
 ---
 
-T.S. Eliot has produced phenomenal works with his words. It is no wonder as to why he is revered as one of the 20th century's most venerated poets. This is an excerpt from Little Gidding (No. 4 of 'Four Quartets'). Not only beautifully composed, the astuteness of his message to navigate present situations with multiple paths amongst a broader scope perspective resounded with me, and I wanted to share it here.
+T.S. Eliot has produced phenomenal works with his words. It is no wonder as to why he is revered as one of the 20th century's most venerated poets. This is an excerpt from Little Gidding (No. 4 of 'Four Quartets'). Not only beautifully composed, the astuteness of his message to analyze the role of endings themselves resounded strongly with me. History does not reside singularly in the past, but in the present. I wanted to share it here.
 
->What we call the beginning is often the end\
+Part V:
+: What we call the beginning is often the end\
 And to make an end is to make a beginning.\
 The end is where we start from. And every phrase\
 And sentence that is right (where every word is at home,\
@@ -57,8 +58,8 @@ And all shall be well and\
 All manner of thing shall be well\
 When the tongues of flames are in-folded\
 Into the crowned knot of fire\
-And the fire and the rose are one.
-
+And the fire and the rose are one.\
+\
 T.S. Eliot
 
-
+When we reach the end, there is a beginning. We start at the end. The beginning and the end are connected, and one must exist for the other.
