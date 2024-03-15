@@ -62,8 +62,6 @@ And the fire and the rose are one.\
 \
 T.S. Eliot
 
-When we reach the end, there is a beginning. We start at the end. The beginning and the end are connected, and one must exist for the other.
+When we reach the end, there is a beginning. We start at the end. The beginning and the end are connected, and one must exist for the other. In the time after the end, we may reflect on the immensity of events in perspective of the recent past. We embrace its impacts on who we are in the beginning of what is next. The further we travel from the beginning, the clearer we align to who we are.
 
 [This analysis](https://quietdisruptors.com/the-end-is-where-we-start-from/) further acutely interprets the composition.
-
-In the time [after](https://open.spotify.com/playlist/4MGDBS7AfZDqzlIDRk9dWu?si=54bb0fa5b72642e7) the end, we may reflect on the immensity of events in perspective of the recent past. We embrace its impacts on who we are in the beginning of what is next. The further we travel from the beginning, the clearer we align to who we are.
