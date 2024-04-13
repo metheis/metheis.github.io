@@ -1,7 +1,7 @@
 ---
 title: Rewriting the Clone Wars Quotes Page
 author: metheis
-date: 2024-04-13 06:00:00 -0700
+date: 2024-04-13 10:00:00 -0700
 categories: [Quotes, Television]
 tags: [star wars, clone wars, quotes]
 pin: false
