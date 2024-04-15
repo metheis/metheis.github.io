@@ -44,7 +44,8 @@ Here it is nice and even:
 Next, I added hard maple splines to the miter joints to strengthen them. I used a block plane plus some sanding to remove the excess.
 
 ![chess_2](https://live.staticflickr.com/65535/53628009962_c86e4d7162_o_d.jpg){: width="1163" height="876" .w-75 .normal}
-![chess_2](https://live.staticflickr.com/65535/53624472261_17c8ee5a99_k_d.jpg){: width="2048" height="1542" .w-75 .normal}
+![chess_2](https://live.staticflickr.com/65535/53624472261_17c8ee5a99_k_d.jpg){: width="2048" height="1542" .w-75 .normal}\
+I would challenge this comment writer to a match anytime :)
 ![chess_2](https://live.staticflickr.com/65535/53623581287_5125040226_k_d.jpg){: width="2048" height="1542" .w-75 .normal}
 
 I routed the edges for comfort and created handles for lifting! And then spent a ton of time sanding :)
