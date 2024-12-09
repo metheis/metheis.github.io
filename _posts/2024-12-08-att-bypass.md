@@ -1,7 +1,7 @@
 ---
 title: Bypassing AT&T's BWG320 with XGS-PON SFP Module
 author: metheis
-date: 2024-12-208 19:30:00 -0700
+date: 2024-12-08 19:30:00 -0800
 categories: [Computers, Networking]
 tags: [ubiquiti, fiber, uxg-pro]
 pin: false
@@ -44,7 +44,7 @@ The remainder of the post will go over how to set up a WAS-110 to bypass AT&T's 
 
 #### Check your AT&T fiber is on the XGS-PON standard.
 
-Geographic areas with older AT&T fiber that still use PON based fiber are incompatible with this post / the WAS-110. To check which generation you have, open the "Fiber Status" tab on the AT&T web UI via <http://192.168.1.254/cgi-bin/fiberstat.ha>. If `Wave Length` matches `1270 nm` then you're good to go!
+Geographic areas with older AT&T fiber that still use PON based fiber are incompatible with this post / the WAS-110. To check which generation you have, open the "Fiber Status" tab on the AT&T web UI via <192.168.1.254/cgi-bin/fiberstat.ha>. If `Wave Length` matches `1270 nm` then you're good to go!
 
 #### Acquire a WAS-110.
  
@@ -67,7 +67,7 @@ _Photo of the WAS-110 XGS-PON Stick._
 _Photo of the WAS-110 plugged into the XS728T._
  - The default IP of the stick with the Azores firmware is `192.168.11.1`. The connect, set a manual IP on the interface connected to the switch in the same subnet as the PON stick. I chose `192.168.11.2`, but you could technically pick anything `192.168.11.2 - 192.168.11.255`.
    - ![WAS-110 in Switch](/assets/img/2024-12-08-att-bypass/att_bypass_07.png)
- - You should now be able to connect to the WAS-110 at <http://192.168.11.1>.
+ - You should now be able to connect to the WAS-110 at <192.168.11.1>.
 
 Community Firmware Installation
 
