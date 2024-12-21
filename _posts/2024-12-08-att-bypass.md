@@ -48,16 +48,16 @@ Geographic areas with older AT&T fiber that still use PON based fiber are incomp
 
 #### Acquire a WAS-110.
  
- There are two main XGS-PON chipsets in XGS-PON SFP+ sticks, the MaxLinear PRX126 (+Azores firmware), and the Cortina XGS-PON. The WAS-110 uses the PRX126 chipset compatible with the firmware we will use. A list of resellers is [here](https://pon.wiki/xgs-pon/ont/bfw-solutions/was-110/#value-added-resellers).
+There are two main XGS-PON chipsets in XGS-PON SFP+ sticks, the MaxLinear PRX126 (+Azores firmware), and the Cortina XGS-PON. The WAS-110 uses the PRX126 chipset compatible with the firmware we will use. A list of resellers is [here](https://pon.wiki/xgs-pon/ont/bfw-solutions/was-110/#value-added-resellers).
 
- ![WAS-110 XGS-PON Stick](/assets/img/2024-12-08-att-bypass/att_bypass_05.jpg){: width="800" height="600" }
+![WAS-110 XGS-PON Stick](/assets/img/2024-12-08-att-bypass/att_bypass_05.jpg){: width="800" height="600" }
 _Photo of the WAS-110 XGS-PON Stick._
 
- #### Install 8311 community firmware.
+#### Install 8311 community firmware.
 
- The 8311 community is an awesome group of industry professionals and enthusiasts with the collective goal of bypassing ISP customer premise equipment. Here's a link to their [discord](https://discord.com/servers/8311-886329492438671420). They have a community firmware that you can run on the WAS-110 which makes improvements over the manufacturer's default.
+The 8311 community is an awesome group of industry professionals and enthusiasts with the collective goal of bypassing ISP customer premise equipment. Here's a link to their [discord](https://discord.com/servers/8311-886329492438671420). They have a community firmware that you can run on the WAS-110 which makes improvements over the manufacturer's default.
 
- Network Setup
+Network Setup
 
  - Download the [latest firmware](https://github.com/djGrrr/8311-was-110-firmware-builder/releases/tag/v2.8.0), I recommend the file ending in .7z and then using a tool like [7-Zip](https://www.7-zip.org/) to extract it.
    - Right click on the file > 7-Zip > Extract Here
@@ -75,7 +75,8 @@ Community Firmware Installation
    - ![WAS-110 in Switch](/assets/img/2024-12-08-att-bypass/att_bypass_08.png)
    - On the `Service Control` page, check `SSH` and click **Save**.
  - Once SSH is enabled, we can copy over the new firmware (we will use the tar file for a shell install). From a Power Shell window, navigate to the folder containing the WAS firmware that you downloaded from Github. Run this command to copy. Enter yes to trust the host's key, and use the `root` shell password `QpZm@4246#5753` when prompted. If you have a stick with firmware `v1.0.21`, the password is undisclosed. There is a temporary exploit to use instead detailed [here](https://pon.wiki/xgs-pon/ont/bfw-solutions/was-110/#shell-credentials).
- ```bash
+ 
+```bash
 scp -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedKeyTypes=+ssh-rsa .\local-upgrade.tar root@192.168.11.1:/tmp/
 The authenticity of host '192.168.11.1 (192.168.11.1)' can't be established.
 RSA key fingerprint is SHA256:g19b3R0DYZBEEoAoZN3qKrLDRUtXvPXtmnwqKezvgZs.
@@ -84,9 +85,11 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? [Type yes, 
 Warning: Permanently added '192.168.11.1' (RSA) to the list of known hosts.
 root@192.168.11.1's password:
 local-upgrade.tar                                                                     100%   13MB   1.1MB/s   00:12
- ```
+```
+ 
  - Then, use this command to extract and install the firmware. Again, use the `root` password.
- ```bash
+ 
+```bash
 ssh -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedKeyTypes=+ssh-rsa root@192.168.11.1 "tar xvf /tmp/local-upgrade.tar -C /tmp/ -- upgrade.sh && /tmp/upgrade.sh -y -r /tmp/local-upgrade.tar"
 root@192.168.11.1's password:
 upgrade.sh
@@ -111,7 +114,7 @@ Validating installed RootFS image... OK
 Set commit_bank to B, reboot to boot new firmware.
 
 Rebooting...
- ```
+```
 
  - Since the WAS-110 uses an A/B boot partition design, it's a good idea to perform the firmware update a second time to flash the other partition. Rerun the second command from above again. Note that the host key will have changed, so you should see a message along the lines of:
 
